@@ -15,20 +15,17 @@ hibernate {
 environments {
     development {
         dataSource {
-            //dbCreate = "create-drop" // one of 'create', 'create-drop','update'
-            url = "jdbc:postgresql://130.132.111.21:5433/SammaCustomer"
+            url = "jdbc:postgresql://yourIp:5433/SammaCustomer"
         }
     }
     test {
         dataSource {
-            //dbCreate = "update"
-            url = "jdbc:postgresql://"
+            url = "jdbc:postgresql://yourIp:5433/SammaCustomer"
         }
     }
     production {
         dataSource {
-            //dbCreate = "update"
-            url = "jdbc:postgresql://130.132.111.21:5433/SammaCustomer"
+            url = "jdbc:postgresql://yourIp:5433/SammaCustomer"
         }
     }
 }
